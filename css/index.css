@@ -164,11 +164,7 @@ h3 {
   font-style: italic;
 }
 
-/* Request a Ride */
-#top-header {
-  background-color: #ccc;
-}
-
+/* REQUEST A RIDE */
 #formInput {
   padding-left: 2rem;
   padding-right: 2rem;
@@ -207,24 +203,12 @@ h3 {
   width: 300px;
   height: 30px;
   border-radius: 10px;
-  border: 1px solid var(--husky-purple, #2C0C69);
+  border: 1px solid #2C0C69;
 }
 
 #stopList, #riderInfo, label {
   margin: 0px 2px;
   font-size: 13px;
-}
-
-#submit-discription .sub-button {
-  font-family: "Encode Sans", sans-serif;
-  font-weight: 300;
-  background-color: #2C0C69;
-  color: white;
-  height: 40px;
-  width: 140px;
-  text-align: center;
-  font-size: 12px;
-  border-radius: 10px;
 }
 
 #submit-discription {
@@ -236,7 +220,7 @@ h3 {
   font-size: 13px;
 }
 
-/* night escort */
+/* NIGHT ESCORT */
 #escort-request {
   padding-left: 40px;
   padding-top: 20px;
@@ -309,7 +293,7 @@ button:hover {
 }
 
 /* PROFILE PAGE */
-#notifications {
+#notifications, #report {
   padding: 2em;
 }
 
@@ -317,7 +301,7 @@ button:hover {
   margin-bottom: 1em;
 }
 
-#notifications button {
+#notifications button, #report button {
   width: 200px;
   margin: 2em 0;
 }
@@ -347,21 +331,7 @@ label {
 }
 
 /* MAKE A REPORT PAGE */
-#top-header {
-  background-color: #ccc;
-}
-
-#reportInput {
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
-
-.flex-container {
-  display: flex;
-  justify-content: start;
-}
-
-#reportInfo {
+#report {
   width: 400px;
   height: 431px;
   flex-direction: column;
@@ -370,36 +340,14 @@ label {
   padding-right: 10rem;
 }
 
-.flex-item input {
+#report input {
   display: block;
   margin-bottom: 10px;
   font-size: small;
   width: 500px;
   height: 30px;
   border-radius: 10px;
-  border: 1px solid var(--husky-purple, #2C0C69);
-}
-
-#descriptionInput {
-  width: 500px; /* Adjust width as needed */
-  height: 100px; /* Adjust height as needed */
-}
-
-#submit-report .sub-button {
-  font-family: "Encode Sans", sans-serif;
-  font-weight: 300;
-  background-color: #2C0C69;
-  color: white;
-  height: 40px;
-  width: 140px;
-  text-align: center;
-  font-size: 12px;
-  border-radius: 10px;
-}
-
-#submit-report {
-  display: flex;
-  justify-content: center;
+  border: 1px solid #2C0C69;
 }
 
 /* MEDIA QUERIES */
