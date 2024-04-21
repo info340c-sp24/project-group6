@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Group 6: Cindy Te, Allison Martin, and Kaylee Cho">
+    <title>UW Campus Safety</title>
+    <link rel="icon" href="img/uw-favicon.png">
+    <link rel="stylesheet" href="css/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav>
+    <ul>
+      <li id="logo">
+        <img id="logo-img" src="img/uw-logo.png" alt="uw logo">
+        <strong>UW CAMPUS SAFETY </strong>
+      </li>
+      <li>HOME</li>
+      <li>REPORT</li>
+      <li>NIGHT SAFETY</li>
+      <li>RESOURCES</li>
+      <li>PROFILE</li>
+    </ul>
+  </nav>
+
+  <main>
+
+    <header id="top-header">
+      <h1>MAKE A REPORT</h1>
+      <p>
+        Empower your community to stay vigilant and informed by making safety reports.<br>
+        Report and share incidents promptly to keep everyone aware and safe, ensuring<br>
+        a proactive approach to community security.
+      </p>
+    </header>
+
+    <div id="reportInput">
+        <div class="flex-container">
+            <div id="reportInfo" class="flex-item">
+                <label for="nameInput">Name:</label> <br>
+                <input type="text" id="nameInput" name="name"> <br>
+                <label for="idInput">Student ID:</label> <br>
+                <input type="int" id="idInput" name="id"> <br>
+                <label for="phoneInput">Phone:</label> <br>
+                <input type="int" id="phoneInput" name="phone"> <br>
+                <label for="dateTimeInput">Date and Time:</label> <br>
+                <input type="datetime-local" id="dateTimeInput" name="date and time"> <br>
+                <label for="locationInput">Location:</label> <br>
+                <input type="text" id="locationInput" name="location"> <br>
+                <label for="descriptionInput">Description of what you saw:</label> <br>
+                <input type="text" id="descriptionInput" name="description"> <br>
+            </div>
+        </div>
+        <div id="submit-report" class="flex-item">
+            <button class="sub-button" type="submit">Submit a Report</button>
+        </div>
+    </div>
+  </main>
+</body>
+</html>
