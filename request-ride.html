@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Group 6: Cindy Te, Allison Martin, and Kaylee Cho">
+    <title>UW Campus Safety</title>
+    <link rel="icon" href="img/uw-favicon.png">
+    <link rel="stylesheet" href="css/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav>
+    <div id="logo">
+      <img id="logo-img" src="img/uw-logo.png" alt="uw logo">
+      <strong>UW CAMPUS SAFETY </strong>
+    </div>
+    <ul>
+      <li>
+        <a href="index.html">HOME</a>
+      </li>
+      <li>
+        <a href="report.html">REPORT</a>
+      </li>
+      <li>
+        <a href="night-safety.html">NIGHT SAFETY</a>
+      </li>
+      <li>
+        <a href="resources.html">RESOURCES</a>
+      </li>
+      <li>
+        <a href="profile.html">PROFILE</a>
+      </li>
+    </ul>
+  </nav>
+
+  <main>
+
+    <header id="top-header">
+      <h1>REQUEST A RIDE</h1>
+      <p>
+        Submit ride requests by phone or through the link to the request form below.<br>
+        Please allow at least one hour advance notice when requesting same-day rides.<br>
+        Ride requests are not guaranteed until the program coordinator confirms availability via phone or email.<br>
+        Ride times are subject to availibility.<br>
+      </p>
+    </header>
+
+    <div id="formInput">
+        <h2>DIAL-A-REQUEST FORM</h2>
+        <div class="flex-container">
+            <div id="riderInfo" class="flex-item">
+                <h3>RIDER INFORMATION</h3>
+
+                <label for="nameInput">Name:</label> <br>
+                <input type="text" id="nameInput" name="name"> <br>
+                <label for="idInput">Student ID:</label> <br>
+                <input type="int" id="idInput" name="id"> <br>
+                <label for="phoneInput">Phone:</label> <br>
+                <input type="int" id="phoneInput" name="phone"> <br>
+            </div>
+
+            <div id="stopList" class="flex-item">
+                <h3>DIAL-A-RIDE STOP LIST</h3> <br>
+                <p>
+                    If you have any questions about pickup or dropoff locations, <br>
+                    please contact us at shuttles@uw.edu or 206-685-3146 before filling out the form.
+                </p>
+
+                <label for="pickupInput">Pick Up Location:</label> <br>
+                <input type="text" id="pickupInput" name="pickup"> <br>
+                <label for="dropoffInput">Drop Off Location:</label> <br>
+                <input type="text" id="dropoffInput" name="dropoff"> <br>
+                <label for="timeInput">Desired Pick Up Time (ex. 3:15PM or 12:35AM):</label> <br>
+                <input type="time with meridiem" id="timeInput" name="time"> <br>
+                <label for="StartandEndDateInput">Start and End Date:
+                    (Enter today's date, if your estimated drop off time is tomorrow enter tomorrow for end date.)</label> <br>
+                <input type="calendarInput" id="StartandEndDateInput" name="Date">
+                <input type="calendarInput" id="StartandEndDateInput" name="Date"> <br>
+
+                <div id="submit-discription" class="flex-item">
+                    <p>
+                        Want to find pick up or drop off stops? <a href="https://depts.washington.edu/ceogis/Public/DialARide/" class="map-link">Click Here</a><br>
+                    </p>
+                    <button class="sub-button" type="submit">SUBMIT A REQUEST</button>
+                </div>
+            </div>
+        </div>
+    </div>
+  </main>
+</body>
+</html>

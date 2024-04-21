@@ -164,6 +164,98 @@ h3 {
   font-style: italic;
 }
 
+/* REQUEST A RIDE */
+#formInput {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+#formInput h2{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: start;
+}
+
+#riderInfo {
+  width: 400px;
+  height: 431px;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  padding-right: 10rem;
+}
+
+#stopList {
+  width: 703px;
+  height: 658px;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-item input {
+  display: block;
+  margin-bottom: 10px;
+  font-size: small;
+  width: 300px;
+  height: 30px;
+  border-radius: 10px;
+  border: 1px solid #2C0C69;
+}
+
+#stopList, #riderInfo, label {
+  margin: 0px 2px;
+  font-size: 13px;
+}
+
+#submit-discription {
+  display: flex;
+}
+
+#submit-discription p {
+  padding-right: 7rem;
+  font-size: 13px;
+}
+
+/* NIGHT ESCORT */
+#escort-request {
+  padding-left: 40px;
+  padding-top: 20px;
+}
+
+#escort-request h2{
+  padding-bottom: 10px;
+}
+
+#escort-request h3, h4 {
+  padding-top: 13px;
+  padding-bottom: 10px;
+}
+
+#escort-request li, p {
+  font-size: 14px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+#escort-request button {
+  background-color: #2C0C69;
+  color: white;
+  height: 40px;
+  width: 200px;
+  text-align: center;
+  font-size: 12px;
+  border-radius: 10px;
+}
+
+#service-area-map {
+  padding-top: 20px;
+  width: 400px;
+  height: 300px;
+}
 
 /* NIGHT SAFETY PAGE */
 #night-card {
@@ -201,7 +293,7 @@ button:hover {
 }
 
 /* PROFILE PAGE */
-#notifications {
+#notifications, #report {
   padding: 2em;
 }
 
@@ -209,7 +301,7 @@ button:hover {
   margin-bottom: 1em;
 }
 
-#notifications button {
+#notifications button, #report button {
   width: 200px;
   margin: 2em 0;
 }
@@ -220,6 +312,42 @@ button:hover {
 
 label {
   line-height: 3;
+}
+
+/* RESOURCES PAGE*/
+#resources-links {
+  padding-left: 40px;
+  padding-top: 20px;
+}
+
+#resources-links h2{
+  padding-bottom: 10px;
+}
+
+#resources-links li, p {
+  font-size: 14px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+/* MAKE A REPORT PAGE */
+#report {
+  width: 400px;
+  height: 431px;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  padding-right: 10rem;
+}
+
+#report input {
+  display: block;
+  margin-bottom: 10px;
+  font-size: small;
+  width: 500px;
+  height: 30px;
+  border-radius: 10px;
+  border: 1px solid #2C0C69;
 }
 
 /* MEDIA QUERIES */
