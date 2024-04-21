@@ -133,5 +133,90 @@ h3 {
   font-style: italic;
 }
 
+#top-header {
+  background-color: #ccc;
+}
 
+#formInput {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
 
+.flex-container {
+  display: flex;
+  justify-content: start;
+}
+
+#riderInfo {
+  width: 400px;
+  height: 431px;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  padding-right: 10rem;
+}
+
+#stopList {
+  width: 703px;
+  height: 658px;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-item input {
+  display: block;
+  margin-bottom: 10px;
+  font-size: small;
+  width: 300px;
+  height: 30px;
+  border-radius: 10px;
+  border: 1px solid var(--husky-purple, #2C0C69);
+}
+
+#stopList, #riderInfo, label {
+  display: block;
+  margin: 0px 2px;
+  font-size: 13px;
+}
+
+#submit-discription .sub-button {
+  background-color: #2C0C69;
+  color: white;
+  height: 40px;
+  width: 120px;
+  text-align: center;
+  font-size: 12px;
+  border-radius: 10px;
+}
+
+#submit-discription {
+  display: flex;
+}
+
+#submit-discription p {
+  padding-right: 7rem;
+}
+
+#escort-request {
+  padding-left: 30px;
+}
+
+#escort-request li, p {
+  font-size: 15px;
+}
+
+#escort-request button {
+  background-color: #2C0C69;
+  color: white;
+  height: 40px;
+  width: 200px;
+  text-align: center;
+  font-size: 12px;
+  border-radius: 10px;
+}
+
+#service-area-map {
+  padding-top: 20px;
+  width: 400px;
+  height: 300px;
+}
