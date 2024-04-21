@@ -1,6 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, nav {
+  height: 100%;
+}
+
 body {
   font-family: "Encode Sans", sans-serif;
-  font-weight: 500;
+  color: #2C0C69;
+}
+
+#menu {
+  width: 24px;
+}
+
+#logo {
+  padding: 3em 1.5em;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 2em;
+}
+
+header {
+  padding: 2em;
+  background-color: #2C0C69;
+  color: white;
+  border-bottom: 1px solid #2C0C69;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
 }
 
 #logo {
@@ -8,23 +44,21 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-bottom: 100px;
+  padding-bottom: 80px;
 }
 
 #logo-img {
-  width: 75px;
+  width: 65px;
   padding-bottom: 15px;
 }
 
 nav {
+  display: none;
   position: fixed;
   left: 0;
   top: 0;
-  height: 100%;
   background-color: #2C0C69;
   color: white;
-  padding: 20px;
-  display: flex;
   justify-content: center;
 }
 
@@ -35,29 +69,202 @@ nav ul {
   text-align: center;
 }
 
-nav ul li {
-  padding: 1em;
+nav li {
+  padding: 2em 0;
+  font-size: 14px;
+  font-weight: 500;
 }
 
-#main-content {
-  margin-left: 250px;
+nav li a {
+  text-decoration: none;
+  color: inherit;
 }
 
-#page-header {
-  background-color: #F3F3F3;
+nav li:hover {
+  background-color: white;
+  color: #2C0C69 ;
+  font-weight: 700;
 }
 
-#card-content {
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+/* INDEX.HTML */
+#card-container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-evenly;
+  flex: 1;
+  padding: 10px;
 }
 
 .card {
-  flex-shrink: 1;
-  margin: 5em;
+  margin: 1em;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  overflow: hidden;
+  width: 350px;
+  height: 230px;
+  position: relative;
+}
+
+.card h2 {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+#card1 {
+  background-image: url("../img/safe-campus.jpg");
+  object-fit: contain;
+}
+
+#card2 {
+  background-image: url("../img/uw-police.jpg");
+  object-fit: contain;
+}
+
+#card3 {
+  background-image: url("../img/emergency-management.jpg");
+  object-fit: contain;
+}
+
+#card4 {
+  background-image: url("../img/contact.jpg");
+  object-fit: contain;
+}
+
+#news {
+  flex-basis: 325px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  padding: 2.5em;
+  border-top: 1px solid #2C0C69;
+}
+
+#news ul {
+  list-style-type: none;
+  padding: 1em 0;
+}
+
+#news li {
+  padding-bottom: 2em;
+}
+
+h3 {
+  font-size: 1rem;
+}
+
+#news p {
+  font-size: 1em;
+  font-style: italic;
+}
+
+
+/* NIGHT SAFETY PAGE */
+#night-card {
+  width: min-content;
+  margin: 1em;
   border: 1px solid #ccc;
   border-radius: 20px;
   overflow: hidden;
 }
 
+#night-card-text {
+  padding: 1em ;
+}
 
+#night-card-text h2, .notification-group {
+  padding-bottom: .5em;
+}
+
+#night-card-text p {
+  padding-bottom: 2em;
+}
+
+button {
+  padding: 1em;
+  background-color: #3d1c7a;
+  color: white;
+  border-style: none;
+  border-radius: .5em;
+  font-size: medium;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #210653;
+}
+
+/* PROFILE PAGE */
+#notifications {
+  padding: 2em;
+}
+
+#profile {
+  margin-bottom: 1em;
+}
+
+#notifications button {
+  width: 200px;
+  margin: 2em 0;
+}
+
+.notification-group {
+  margin: 2rem 0;
+}
+
+label {
+  line-height: 3;
+}
+
+/* MEDIA QUERIES */
+@media (min-width: 598px) {
+  nav {
+    display: block;
+  }
+
+  #menu {
+    display: none;
+  }
+
+  main {
+    margin-left: 215px;
+  }
+
+  h1 {
+    font-size: 2.5em;
+  }
+
+  header {
+    background-color: white;
+    color: #2C0C69;
+  }
+
+}
+
+@media (min-width: 992px) {
+  nav ul li {
+    font-size: 16px;
+    padding: 2em .5em;
+  }
+
+  main {
+    margin-left: 215px;
+  }
+
+  #content {
+    display: flex;
+    flex: 1;
+  }
+
+  #news {
+    border-left: 1px solid #2C0C69;
+    border-top: 0;
+    padding: 2em;
+  }
+}
