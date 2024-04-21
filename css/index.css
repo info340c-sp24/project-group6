@@ -211,7 +211,6 @@ h3 {
 }
 
 #stopList, #riderInfo, label {
-  display: block;
   margin: 0px 2px;
   font-size: 13px;
 }
