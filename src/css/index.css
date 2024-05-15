@@ -1,0 +1,399 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, nav {
+  height: 100%;
+}
+
+body {
+  font-family: "Encode Sans", sans-serif;
+  color: #2C0C69;
+}
+
+#menu {
+  width: 24px;
+}
+
+#logo {
+  padding: 3em 1.5em;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 2em;
+}
+
+header {
+  padding: 2em;
+  background-color: #2C0C69;
+  color: white;
+  border-bottom: 1px solid #2C0C69;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+#logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 80px;
+}
+
+#logo-img {
+  width: 65px;
+  padding-bottom: 15px;
+}
+
+nav {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: #2C0C69;
+  color: white;
+  justify-content: center;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+nav li {
+  padding: 2em 0;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+nav li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+nav li:hover {
+  background-color: white;
+  color: #2C0C69 ;
+  font-weight: 700;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+/* INDEX.HTML */
+#card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  flex: 1;
+  padding: 10px;
+}
+
+.card {
+  margin: 1em;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  overflow: hidden;
+  width: 350px;
+  height: 230px;
+  position: relative;
+}
+
+.card h2 {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+#card1 {
+  /*  background-image: url("..public/img/safe-campus.jpg"); */
+  object-fit: contain;
+}
+
+#card2 {
+  /* background-image: url("..public/img/uw-police.jpg"); */
+  object-fit: contain;
+}
+
+#card3 {
+  /* background-image: url("..public/img/emergency-management.jpg"); */
+  object-fit: contain;
+}
+
+#card4 {
+
+  background-image: url("../../public/img/contact.jpg");
+  object-fit: contain;
+}
+
+#news {
+  flex-basis: 325px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  padding: 2.5em;
+  border-top: 1px solid #2C0C69;
+}
+
+#news ul {
+  list-style-type: none;
+  padding: 1em 0;
+}
+
+#news li {
+  padding-bottom: 2em;
+}
+
+h3 {
+  font-size: 1rem;
+}
+
+#news p {
+  font-size: 1em;
+  font-style: italic;
+}
+
+/* REQUEST A RIDE */
+#formInput {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+#formInput h2{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: start;
+}
+
+#riderInfo {
+  width: 400px;
+  height: 431px;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  padding-right: 10rem;
+}
+
+#stopList {
+  width: 703px;
+  height: 658px;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-item input {
+  display: block;
+  margin-bottom: 10px;
+  font-size: small;
+  width: 300px;
+  height: 30px;
+  border-radius: 10px;
+  border: 1px solid #2C0C69;
+}
+
+#stopList, #riderInfo, label {
+  margin: 0px 2px;
+  font-size: 13px;
+}
+
+#submit-discription {
+  display: flex;
+}
+
+#submit-discription p {
+  padding-right: 7rem;
+  font-size: 13px;
+}
+
+/* NIGHT ESCORT */
+#escort-request {
+  padding-left: 40px;
+  padding-top: 20px;
+}
+
+#escort-request h2{
+  padding-bottom: 10px;
+}
+
+#escort-request h3, h4 {
+  padding-top: 13px;
+  padding-bottom: 10px;
+}
+
+#escort-request li, p {
+  font-size: 14px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+#escort-request button {
+  background-color: #2C0C69;
+  color: white;
+  height: 40px;
+  width: 200px;
+  text-align: center;
+  font-size: 12px;
+  border-radius: 10px;
+}
+
+#service-area-map {
+  padding-top: 20px;
+  width: 400px;
+  height: 300px;
+}
+
+/* NIGHT SAFETY PAGE */
+#night-card {
+  width: min-content;
+  margin: 1em;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+#night-card-text {
+  padding: 1em ;
+}
+
+#night-card-text h2, .notification-group {
+  padding-bottom: .5em;
+}
+
+#night-card-text p {
+  padding-bottom: 2em;
+}
+
+button {
+  padding: 1em;
+  background-color: #3d1c7a;
+  color: white;
+  border-style: none;
+  border-radius: .5em;
+  font-size: medium;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #210653;
+}
+
+/* PROFILE PAGE */
+#notifications, #report {
+  padding: 2em;
+}
+
+#profile {
+  margin-bottom: 1em;
+}
+
+#notifications button, #report button {
+  width: 200px;
+  margin: 2em 0;
+}
+
+.notification-group {
+  margin: 2rem 0;
+}
+
+label {
+  line-height: 3;
+}
+
+/* RESOURCES PAGE*/
+#resources-links {
+  padding-left: 40px;
+  padding-top: 20px;
+}
+
+#resources-links h2{
+  padding-bottom: 10px;
+}
+
+#resources-links li, p {
+  font-size: 14px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+/* MAKE A REPORT PAGE */
+#report {
+  width: 400px;
+  height: 431px;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  padding-right: 10rem;
+}
+
+#report input {
+  display: block;
+  margin-bottom: 10px;
+  font-size: small;
+  width: 500px;
+  height: 30px;
+  border-radius: 10px;
+  border: 1px solid #2C0C69;
+}
+
+/* MEDIA QUERIES */
+@media (min-width: 598px) {
+  nav {
+    display: block;
+  }
+
+  #menu {
+    display: none;
+  }
+
+  main {
+    margin-left: 215px;
+  }
+
+  h1 {
+    font-size: 2.5em;
+  }
+
+  header {
+    background-color: white;
+    color: #2C0C69;
+  }
+
+}
+
+@media (min-width: 992px) {
+  nav ul li {
+    font-size: 16px;
+    padding: 2em .5em;
+  }
+
+  main {
+    margin-left: 215px;
+  }
+
+  #content {
+    display: flex;
+    flex: 1;
+  }
+
+  #news {
+    border-left: 1px solid #2C0C69;
+    border-top: 0;
+    padding: 2em;
+  }
+}
