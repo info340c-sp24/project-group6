@@ -134,8 +134,7 @@ main {
 }
 
 #card4 {
-
-  background-image: url("../../public/img/contact.jpg");
+  background-image: url("../img/contact.jpg");
   object-fit: contain;
 }
 
