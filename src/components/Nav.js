@@ -1,6 +1,13 @@
 import React from 'react';
 
-export function Nav() {
+export function Nav(props) {
+  const { applyPageChangeCallback } = props;
+
+  const handlePageChange = (event) => {
+    event.preventDefault();
+    applyPageChangeCallback(event.target.innerText.toLowerCase());
+  };
+
   return (
     <nav>
       <div id="logo">
@@ -8,20 +15,20 @@ export function Nav() {
         <strong>UW CAMPUS SAFETY </strong>
       </div>
       <ul>
-        <li>
-          <a href="index.html">HOME</a>
+        <li onClick={handlePageChange}>
+          HOME
         </li>
-        <li>
-          <a href="report.html">REPORT</a>
+        <li onClick={handlePageChange}>
+          REPORT
         </li>
-        <li>
-          <a href="night-safety.html">NIGHT SAFETY</a>
+        <li onClick={handlePageChange}>
+          NIGHT SAFETY
         </li>
-        <li>
-          <a href="resources.html">RESOURCES</a>
+        <li onClick={handlePageChange}>
+          RESOURCES
         </li>
-        <li>
-          <a href="profile.html">PROFILE</a>
+        <li onClick={handlePageChange}>
+          PROFILE
         </li>
       </ul>
     </nav>
