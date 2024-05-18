@@ -10,8 +10,8 @@ export function Nav(props) {
 
   return (
     <nav>
-      <div id="logo">
-        <img id="logo-img" src="img/uw-logo.png" alt="uw logo" />
+      <div id='logo'>
+        <img id='logo-img' src='img/uw-logo.png' alt='uw logo' />
         <strong>UW CAMPUS SAFETY </strong>
       </div>
       <ul>

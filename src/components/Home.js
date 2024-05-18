@@ -1,22 +1,22 @@
-import React from "react";
+import React from 'react';
 
 export function Home(props) {
   return (
     <>
       <header>
         <img
-          id="menu"
+          id='menu'
           src={`${process.env.PUBLIC_URL}/img/menu-icon.png`}
-          alt="menu"
+          alt='menu'
         />
         <h1>WELCOME</h1>
         <p>If you have an emergency, please call or text 911.</p>
       </header>
 
-      <div id="content">
-        <section id="card-container">
+      <div id='content'>
+        <section id='card-container'>
           <div
-            className="card"
+            className='card'
             style={{
               backgroundImage: `url(${process.env.PUBLIC_URL}/img/safe-campus.jpg)`,
             }}
@@ -25,7 +25,7 @@ export function Home(props) {
           </div>
 
           <div
-            className="card"
+            className='card'
             style={{
               backgroundImage: `url(${process.env.PUBLIC_URL}/img/uw-police.jpg)`,
             }}
@@ -34,7 +34,7 @@ export function Home(props) {
           </div>
 
           <div
-            className="card"
+            className='card'
             style={{
               backgroundImage: `url(${process.env.PUBLIC_URL}/img/emergency-management.jpg)`,
             }}
@@ -43,7 +43,7 @@ export function Home(props) {
           </div>
 
           <div
-            className="card"
+            className='card'
             style={{
               backgroundImage: `url(${process.env.PUBLIC_URL}/img/contact.jpg)`,
             }}
@@ -52,7 +52,7 @@ export function Home(props) {
           </div>
         </section>
 
-        <section id="news">
+        <section id='news'>
           <h2>RECENT NEWS</h2>
           <ul>
             <li>

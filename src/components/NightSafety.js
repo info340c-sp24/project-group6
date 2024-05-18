@@ -4,15 +4,15 @@ export function NightSafety(props) {
   return (
     <>
       <header>
-        <img id="menu" src="img/menu-icon.png" alt="menu"/>
+        <img id='menu' src='img/menu-icon.png' alt='menu'/>
         <h1>SAFETY AT NIGHT</h1>
       </header>
 
-      <div id="content">
-        <section id="card-container">
-          <div id= "night-card">
-            <img src="img/night-ride.jpg" alt="uw night ride shuttle"/>
-            <div id="night-card-text">
+      <div id='content'>
+        <section id='card-container'>
+          <div id='night-card'>
+            <img src='img/night-ride.jpg' alt='uw night ride shuttle'/>
+            <div id='night-card-text'>
               <h2>NIGHT RIDE</h2>
               <p>
                 NightRide is a UW shuttle service that provides a safe and easy way for U-PASS members
@@ -20,13 +20,13 @@ export function NightSafety(props) {
                 west route zones make their first stop at the IMA front entrance and run every 20 minutes
                 during operating hours. All shuttles are wheelchair accessible.
               </p>
-              <a href="request-ride.html"><button>REQUEST A RIDE</button></a>
+              <a href='request-ride.html'><button>REQUEST A RIDE</button></a>
             </div>
           </div>
 
-          <div id= "night-card">
-            <img src="img/night-walk.jpg" alt="uw night walkers"/>
-            <div id="night-card-text">
+          <div id='night-card'>
+            <img src='img/night-walk.jpg' alt='uw night walkers'/>
+            <div id='night-card-text'>
               <h2>NIGHT WALK</h2>
               <p>
                 Husky NightWalk provides safe vehicle escort at night with a uniformed security guard
@@ -34,7 +34,7 @@ export function NightSafety(props) {
                 (proper identification required) and jump start dead car batteries. The purpose is to help
                 students and employees get to and from campus safely.
               </p>
-              <a href="night-escort.html"><button>REQUEST AN ESCORT</button></a>
+              <a href='night-escort.html'><button>REQUEST AN ESCORT</button></a>
             </div>
           </div>
         </section>
