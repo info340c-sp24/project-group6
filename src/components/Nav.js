@@ -15,22 +15,12 @@ export function Nav(props) {
         <strong>UW CAMPUS SAFETY </strong>
       </div>
       <ul>
-        <li onClick={handlePageChange}>
-          HOME
-        </li>
-        <li onClick={handlePageChange}>
-          REPORT
-        </li>
-        <li onClick={handlePageChange}>
-          NIGHT SAFETY
-        </li>
-        <li onClick={handlePageChange}>
-          RESOURCES
-        </li>
-        <li onClick={handlePageChange}>
-          PROFILE
-        </li>
+        <li onClick={handlePageChange}>HOME</li>
+        <li onClick={handlePageChange}>REPORT</li>
+        <li onClick={handlePageChange}>NIGHT SAFETY</li>
+        <li onClick={handlePageChange}>RESOURCES</li>
+        <li onClick={handlePageChange}>PROFILE</li>
       </ul>
     </nav>
   );
-};
+}
