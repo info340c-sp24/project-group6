@@ -1,7 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export function NightSafety(props) {
-  const { applyPageChangeCallback } = props;
 
   return (
     <>
@@ -22,7 +22,9 @@ export function NightSafety(props) {
                 west route zones make their first stop at the IMA front entrance and run every 20 minutes
                 during operating hours. All shuttles are wheelchair accessible.
               </p>
-              <button onClick={() => applyPageChangeCallback('request a ride')}>REQUEST A RIDE</button>
+              <Link to="/request-ride">
+                <button>REQUEST A RIDE</button>
+              </Link>
             </div>
           </div>
 
@@ -36,7 +38,9 @@ export function NightSafety(props) {
                 (proper identification required) and jump start dead car batteries. The purpose is to help
                 students and employees get to and from campus safely.
               </p>
-              <button onClick={() => applyPageChangeCallback('request an escort')}>REQUEST AN ESCORT</button>
+              <Link to="/night-walk">
+                <button>REQUEST AN ESCORT</button>
+              </Link>
             </div>
           </div>
         </section>

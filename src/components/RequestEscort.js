@@ -1,12 +1,9 @@
 import React from 'react';
-import { Nav } from './Nav';
 
 export function RequestEscort(props) {
-  const { applyPageChangeCallback } = props;
 
   return (
     <div>
-      <Nav applyPageChangeCallback={applyPageChangeCallback} />
       <>
         <header id="top-header">
           <h1>REQUEST AN ESCORT</h1>

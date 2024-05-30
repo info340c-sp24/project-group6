@@ -1,13 +1,7 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 export function Nav(props) {
-  const { applyPageChangeCallback } = props;
-
-  const handlePageChange = (event) => {
-    event.preventDefault();
-    applyPageChangeCallback(event.target.innerText.toLowerCase());
-  };
-
   return (
     <nav>
       <div id='logo'>
@@ -15,11 +9,31 @@ export function Nav(props) {
         <strong>UW CAMPUS SAFETY </strong>
       </div>
       <ul>
-        <li onClick={handlePageChange}>HOME</li>
-        <li onClick={handlePageChange}>REPORT</li>
-        <li onClick={handlePageChange}>NIGHT SAFETY</li>
-        <li onClick={handlePageChange}>RESOURCES</li>
-        <li onClick={handlePageChange}>PROFILE</li>
+        <li>
+          <NavLink to="/home">
+            HOME
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="/report">
+            REPORT
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="/night-safety">
+            NIGHT SAFETY
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="/resources">
+            RESOURCES
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="/profile">
+            PROFILE
+          </NavLink>
+        </li>
       </ul>
     </nav>
   );

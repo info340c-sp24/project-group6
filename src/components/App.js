@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import { Nav } from './Nav';
 import { Home } from './Home';
 import { Profile } from './Profile';
@@ -7,28 +6,31 @@ import { Resources } from './Resources';
 import { Report } from './Report';
 import { RequestRide } from './RequestRide';
 import { RequestEscort } from './RequestEscort';
+import { Routes, Route, Navigate} from 'react-router-dom';
 
 function App(props) {
-  const [page, setPage] = useState('home');
-
-  const applyPageChangeCallback = (selectedPage) => {
-    setPage(selectedPage);
-  };
 
   return (
-    <main>
-      <Nav applyPageChangeCallback={applyPageChangeCallback} />
-      <div>
-        {page === 'home' && <Home />}
-        {page === 'profile' && <Profile />}
-        {page === 'night safety' && <NightSafety applyPageChangeCallback={applyPageChangeCallback} />}
-        {page === 'resources' && <Resources />}
-        {page === 'report' && <Report />}
-        {page === 'request a ride' && <RequestRide applyPageChangeCallback={applyPageChangeCallback} />}
-        {page === 'request an escort' && <RequestEscort applyPageChangeCallback={applyPageChangeCallback} />}
-        {page !== 'home' && page !== 'profile' && page !== 'night safety' && page !== 'resources' && page !== 'report' && page !== 'request a ride' && page !== 'request an escort' && <p>Invalid page selected.</p>}
-      </div>
-    </main>
+    <div>
+      <main>
+        <Nav />
+        <div>
+          <Routes>
+            <Route path="home" element={<Home />} />
+            <Route path="report" element={<Report />} />
+            <Route path="night-safety" element={<NightSafety />} />
+            <Route path="resources" element={<Resources />} />
+            <Route path="profile" element={<Profile />} />
+            <Route path="request-ride" element={<RequestRide />} />
+            <Route path="night-walk" element={<RequestEscort />} />
+            <Route path="*" element={<Navigate to ="home"/>} />
+          </Routes>
+        </div>
+        <footer>
+          &copy; INFO 340 Group 6
+        </footer>
+      </main>
+    </div>
   );
 }
 

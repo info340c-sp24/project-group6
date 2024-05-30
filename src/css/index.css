@@ -35,6 +35,10 @@ header {
   border-bottom: 1px solid #2c0c69;
 }
 
+footer {
+  padding: 1em;
+}
+
 p {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
@@ -342,8 +346,6 @@ p {
 
 /* MAKE A REPORT PAGE */
 #report {
-  width: 400px;
-  height: 431px;
   flex-direction: column;
   justify-content: start;
   align-items: start;
@@ -352,11 +354,11 @@ p {
 
 #report input {
   display: block;
-  margin-bottom: 10px;
   font-size: small;
-  width: 500px;
+  width: 800px;
   height: 30px;
   border-radius: 10px;
+  padding: 1em;
   border: 1px solid #2c0c69;
 }
 

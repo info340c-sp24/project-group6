@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { Nav } from './Nav';
 
 export function RequestRide(props) {
-  const { applyPageChangeCallback } = props;
   const [formData, setFormData] = useState({
     name: '',
     id: '',
@@ -26,7 +25,6 @@ export function RequestRide(props) {
 
   return (
     <div>
-      <Nav applyPageChangeCallback={applyPageChangeCallback} />
       <>
         <header id="top-header">
           <h1>REQUEST A RIDE</h1>
