@@ -97,6 +97,10 @@ main {
   flex-direction: column;
 }
 
+.savedMessage {
+  font-weight: bold;
+}
+
 /* INDEX.HTML */
 #card-container {
   display: flex;
