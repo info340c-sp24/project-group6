@@ -158,6 +158,7 @@ main {
 #news ul {
   list-style-type: none;
   padding: 1em 0;
+  margin-bottom: 2em;
 }
 
 #news li {
@@ -171,6 +172,24 @@ h3 {
 #news p {
   font-size: 1em;
   font-style: italic;
+}
+
+#reports {
+  margin-top: 2em;
+  padding-right: 2em; 
+}
+
+#reports ul {
+  list-style-type: none;
+  padding: 1em 0;
+}
+
+#reports li {
+  padding-bottom: 2em;
+}
+
+#reports h2 {
+  font-size: 1.5rem; 
 }
 
 /* REQUEST A RIDE */

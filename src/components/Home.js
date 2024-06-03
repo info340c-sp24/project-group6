@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { ReportContext } from './ReportContext';
 
 export function Home(props) {
+  const { reports } = useContext(ReportContext);
   return (
     <>
       <header>
@@ -70,6 +72,20 @@ export function Home(props) {
               <h3>Get Ready for Winter Weather</h3>
               <p>December 14, 2023</p>
             </li>
+          </ul>
+        </section>
+
+        <section id='reports'>
+          <h2>RECENT REPORTS</h2>
+          <ul>
+            {reports.map((report, index) => (
+              <li key={index}>
+                <h3>{report.name}</h3>
+                <p>{report.dateTime}</p>
+                <p>{report.location}</p>
+                <p>{report.description}</p>
+              </li>
+            ))}
           </ul>
         </section>
       </div>
