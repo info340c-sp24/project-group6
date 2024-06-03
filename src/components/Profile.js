@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { MobileNav } from './Nav';
 
 export function Profile(props) {
   const [settings, setSettings] = useState([
@@ -33,7 +34,7 @@ export function Profile(props) {
   return (
     <>
       <header>
-        <img id='menu' src='img/menu-icon.png' alt='menu' />
+        <MobileNav />
         <h1>PROFILE</h1>
       </header>
       <div id='notifications'>
