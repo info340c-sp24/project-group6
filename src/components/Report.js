@@ -1,6 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
+import { ReportContext } from './ReportContext';
 
 export function Report(props) {
+  const { addReport } = useContext(ReportContext);
   const [formData, setFormData] = useState({
     name: '',
     studentID: '',
@@ -17,7 +19,15 @@ export function Report(props) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
+    addReport(formData);
+    setFormData({
+      name: '',
+      studentID: '',
+      phone: '',
+      dateTime: '',
+      location: '',
+      description: ''
+    });
   };
 
   return (
@@ -33,7 +43,6 @@ export function Report(props) {
       </header>
 
       <div id='report'>
-
         <div>
           <label htmlFor='nameInput'>Name:</label> <br />
           <input type='text' id='nameInput' name='name' value={formData.name} onChange={handleChange} /> <br />
