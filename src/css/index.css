@@ -432,4 +432,44 @@ p {
     border-top: 0;
     padding: 2em;
   }
+  #resources-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  #resources-links {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  #personalized-resources {
+    width: 300px;
+    position: absolute;
+    top: 160px;
+    right: 20px;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  #personalized-resources h2 {
+    margin-top: 0;
+  }
+  
+  #personalized-resources ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  #personalized-resources li {
+    margin-bottom: 10px;
+  }
+  
+  #resources-links button {
+    margin-top: 20px;
+    margin-left: 300px;
+  }
 }
