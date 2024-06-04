@@ -13,14 +13,46 @@ export function RequestRide() {
     endDate: '',
   });
 
+  const [submitted, setSubmitted] = useState(false);
+
+  const [errorMessage, setErrorMessage] = useState('');
+
+  const [submittedForm, setSubmittedForm] = useState([]);
+
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData((prevData) => ({...prevData, [name]: value,}));
+    setFormData({ ...formData, [name]: value });
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
+    setFormData({
+      name: '',
+      id: '',
+      phone: '',
+      pickup: '',
+      dropoff: '',
+      time: '',
+      startDate: '',
+      endDate: '',
+    });
+    let hasError = false;
+    const requiredFields = ['name', 'id', 'phone', 'pickup', 'dropoff', 'time', 'startDate', 'endDate'];
+
+    for (const field of requiredFields) {
+      if (formData[field] === '') {
+        hasError = true;
+        setErrorMessage('Form not submitted. Please fill in all fields.');
+        break;
+      }
+    }
+
+    if (!hasError) {
+      setSubmitted(true);
+      setErrorMessage('');
+      setSubmittedForm([...submittedForm, { ...formData }]);
+      console.log('Form submitted:', formData);
+    }
   };
 
   return (
@@ -42,10 +74,13 @@ export function RequestRide() {
           <div className="flex-container">
             <div id="riderInfo" className="flex-item">
               <h3>RIDER INFORMATION</h3>
+
               <label htmlFor="nameInput">Name:</label>
               <input type="text" id="nameInput" name="name" value={formData.name} onChange={handleChange} />
+
               <label htmlFor="idInput">Student ID:</label>
-              <input type="number" id="idInput" name="id" value={formData.id} onChange={handleChange} />
+              <input type="text" id="idInput" name="id" value={formData.id} onChange={handleChange} />
+
               <label htmlFor="phoneInput">Phone:</label>
               <input type="tel" id="phoneInput" name="phone" value={formData.phone} onChange={handleChange} />
             </div>
@@ -56,14 +91,19 @@ export function RequestRide() {
                 If you have any questions about pickup or dropoff locations,<br />
                 please contact us at shuttles@uw.edu or 206-685-3146 before filling out the form.
               </p>
+
               <label htmlFor="pickupInput">Pick Up Location:</label>
               <input type="text" id="pickupInput" name="pickup" value={formData.pickup} onChange={handleChange} />
+
               <label htmlFor="dropoffInput">Drop Off Location:</label>
               <input type="text" id="dropoffInput" name="dropoff" value={formData.dropoff} onChange={handleChange} />
+
               <label htmlFor="timeInput">Desired Pick Up Time (ex. 3:15PM or 12:35AM):</label>
               <input type="text" id="timeInput" name="time" value={formData.time} onChange={handleChange} />
+
               <label htmlFor="startDateInput">Start Date:</label>
               <input type="date" id="startDateInput" name="startDate" value={formData.startDate} onChange={handleChange} />
+
               <label htmlFor="endDateInput">End Date:</label>
               <input type="date" id="endDateInput" name="endDate" value={formData.endDate} onChange={handleChange} />
             </div>
@@ -73,7 +113,9 @@ export function RequestRide() {
               Want to find pick up or drop off stops?{' '}
               <a href="https://depts.washington.edu/ceogis/Public/DialARide/" className="map-link">Click Here</a>
             </p>
-            <button className="sub-button" type="submit">SUBMIT A REQUEST</button>
+            <button onClick={handleSubmit}>SUBMIT A REQUEST</button>
+            {errorMessage && <p className='changes'>{errorMessage}</p>}
+            {submitted && <p className='changes'>Report submitted</p>}
           </div>
         </form>
       </>
