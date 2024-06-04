@@ -176,7 +176,7 @@ h3 {
 
 #reports {
   margin-top: 2em;
-  padding-right: 2em; 
+  padding-right: 2em;
 }
 
 #reports ul {
@@ -189,7 +189,7 @@ h3 {
 }
 
 #reports h2 {
-  font-size: 1.5rem; 
+  font-size: 1.5rem;
 }
 
 /* REQUEST A RIDE */
@@ -405,6 +405,10 @@ p {
   header {
     background-color: white;
     color: #2c0c69;
+  }
+
+  #mobile-nav {
+    display: none;
   }
 }
 

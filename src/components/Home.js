@@ -1,16 +1,13 @@
 import React, { useContext } from 'react';
 import { ReportContext } from './ReportContext';
+import { MobileNav } from './Nav';
 
-export function Home(props) {
+export function Home() {
   const { reports } = useContext(ReportContext);
   return (
     <>
       <header>
-        <img
-          id='menu'
-          src={`${process.env.PUBLIC_URL}/img/menu-icon.png`}
-          alt='menu'
-        />
+        <MobileNav />
         <h1>WELCOME</h1>
         <p>If you have an emergency, please call or text 911.</p>
       </header>
@@ -55,32 +52,11 @@ export function Home(props) {
         </section>
 
         <section id='news'>
-          <h2>RECENT NEWS</h2>
-          <ul>
-            <li>
-              <h3>Outreach at UW for people experiencing homelessness</h3>
-              <p>January 25, 2024</p>
-            </li>
-            <li>
-              <h3>
-                Enhancing Campus Safety: UW Alert text messages soon to reach
-                more students
-              </h3>
-              <p>January 3, 2024</p>
-            </li>
-            <li>
-              <h3>Get Ready for Winter Weather</h3>
-              <p>December 14, 2023</p>
-            </li>
-          </ul>
-        </section>
-
-        <section id='reports'>
           <h2>RECENT REPORTS</h2>
           <ul>
             {reports.map((report, index) => (
               <li key={index}>
-                <h3>{report.name}</h3>
+                <h3>{report.title}</h3>
                 <p>{report.dateTime}</p>
                 <p>{report.location}</p>
                 <p>{report.description}</p>

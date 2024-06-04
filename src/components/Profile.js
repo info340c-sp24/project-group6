@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { MobileNav } from './Nav';
 
-export function Profile(props) {
+export function Profile() {
   const [settings, setSettings] = useState([
     { id: 'setting1', isChecked: false },
     { id: 'setting2', isChecked: false },

@@ -9,7 +9,7 @@ import { RequestEscort } from './RequestEscort';
 import { Routes, Route, Navigate} from 'react-router-dom';
 import { ReportProvider } from './ReportContext';
 
-function App(props) {
+function App() {
 
   return (
     <ReportProvider>

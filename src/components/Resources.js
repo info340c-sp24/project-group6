@@ -1,10 +1,11 @@
 import React from 'react';
+import { MobileNav } from './Nav';
 
-export function Resources(props) {
+export function Resources() {
   return (
     <>
       <header>
-        <img id="menu" src="img/menu-icon.png" alt="menu" />
+        <MobileNav />
         <h1>RESOURCES</h1>
         <p>
             Huskies watch out for each other. Here are some safety resources to help.

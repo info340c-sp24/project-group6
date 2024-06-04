@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { Nav } from './Nav';
+import { MobileNav } from './Nav';
 
-export function RequestRide(props) {
+export function RequestRide() {
   const [formData, setFormData] = useState({
     name: '',
     id: '',
@@ -26,7 +26,8 @@ export function RequestRide(props) {
   return (
     <div>
       <>
-        <header id="top-header">
+        <header>
+          <MobileNav />
           <h1>REQUEST A RIDE</h1>
           <p>
             Submit ride requests by phone or through the link to the request form below.<br />

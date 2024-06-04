@@ -5,7 +5,7 @@ import Button from '@mui/material/Button';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 
-export function Nav(props) {
+export function Nav() {
   return (
     <nav>
       <div id='logo'>
@@ -54,9 +54,8 @@ export function MobileNav() {
   };
 
   return (
-    <div>
+    <div id="mobile-nav">
       <Button
-        id="basic-button"
         aria-controls={open ? 'basic-menu' : undefined}
         aria-haspopup="true"
         aria-expanded={open ? 'true' : undefined}

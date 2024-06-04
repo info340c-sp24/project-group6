@@ -1,7 +1,8 @@
 import React, { useState, useContext } from 'react';
 import { ReportContext } from './ReportContext';
+import { MobileNav } from './Nav';
 
-export function Report(props) {
+export function Report() {
   const { addReport } = useContext(ReportContext);
   const [formData, setFormData] = useState({
     name: '',
@@ -30,6 +31,7 @@ export function Report(props) {
     setFormData({
       name: '',
       studentID: '',
+      title:'',
       phone: '',
       dateTime: '',
       location: '',
@@ -57,7 +59,7 @@ export function Report(props) {
   return (
     <>
       <header>
-        <img id='menu' src='img/menu-icon.png' alt='menu' />
+        <MobileNav />
         <h1>MAKE A REPORT</h1>
         <p>
           Empower your community to stay vigilant and informed by making safety reports.<br />

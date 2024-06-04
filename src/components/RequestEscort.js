@@ -1,11 +1,13 @@
 import React from 'react';
+import { MobileNav } from './Nav';
 
-export function RequestEscort(props) {
+export function RequestEscort() {
 
   return (
     <div>
       <>
-        <header id="top-header">
+        <header>
+          <MobileNav />
           <h1>REQUEST AN ESCORT</h1>
           <p>
             To ensure your safety when leaving UW Recreation facilities at night,

@@ -1,12 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { MobileNav } from './Nav';
 
-export function NightSafety(props) {
+export function NightSafety() {
 
   return (
     <>
       <header>
-        <img id="menu" src="img/menu-icon.png" alt="menu" />
+        <MobileNav />
         <h1>SAFETY AT NIGHT</h1>
       </header>
 
