@@ -395,4 +395,55 @@ label {
     border-top: 0;
     padding: 2em;
   }
+  
+  /* Container for the resources and personalized resources */
+  #resources-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    padding: 20px;
+  }
+
+  /* Styles for the resources section */
+  #resources-links {
+    flex: 2;
+    padding-right: 20px;
+  }
+
+  /* Styles for the personalized resources section */
+  #personalized-resources {
+    flex: 1;
+    margin-left: 20px;
+    padding: 10px;
+    border-left: 1px solid #ccc;
+  }
+
+  #personalized-resources h2 {
+    margin-bottom: 10px;
+  }
+
+  #personalized-resources ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  #personalized-resources li {
+    margin: 5px 0;
+  }
+
+  /* Button styles */
+  button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  button:hover {
+    background-color: #45a049;
+  }
 }
